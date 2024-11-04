@@ -32,7 +32,7 @@ const Header = () => {
           <button
             type="button"
             className="flex text-GrayLetters"
-            onClick={() => router.push("/dashboard")}
+            onClick={() => router.push("/about")}
           >
             About
           </button>

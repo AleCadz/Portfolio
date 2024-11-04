@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 
-export default function Page() {
+const Page = ()  => {
+
   return (
     <>
       <div className="flex flex-col min-h-screen w-screen px-4 sm:px-10 lg:px-20 bg-slate-900 py-5">
@@ -8,7 +9,7 @@ export default function Page() {
         <div className="w-full flex justify-center h-full my-auto">
           <article className="flex self-center flex-col gap-y-5 mx-4 sm:mx-10 lg:mx-52">
             <h1 className="text-GrayLetters text-3xl sm:text-4xl md:text-5xl animate-bounce">
-              Hi, I am Alejandro del Castillo
+              Hi, I am Alejandro <span className="text-gray-600">del Castillo</span>
             </h1>
 
             <p className="text-GrayLetters leading-9">
@@ -32,3 +33,5 @@ export default function Page() {
     </>
   );
 }
+
+export default Page

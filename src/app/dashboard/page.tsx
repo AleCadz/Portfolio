@@ -1,22 +1,37 @@
-export default function Page() {
+import Header from "@/components/Header";
+
+const Dashboard = ()  => {
+
   return (
     <>
-      <div className="h-screen w-screen">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="size-6 text-red-500"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
-          />
-        </svg>
+      <div className="flex flex-col min-h-screen w-screen px-4 sm:px-10 lg:px-20 bg-slate-900 py-5">
+        <Header />
+        <div className="w-full flex justify-center h-full my-auto">
+          <article className="flex self-center flex-col gap-y-5 mx-4 sm:mx-10 lg:mx-52">
+            <h1 className="text-GrayLetters text-3xl sm:text-4xl md:text-5xl animate-bounce">
+              Hi, I am Alejandro del Castillo
+            </h1>
+
+            <p className="text-GrayLetters leading-9">
+              As a Junior Developer, my primary objective is to harness my
+              enthusiasm for technology and my problem-solving skills to
+              contribute effectively to my work environment. I am dedicated to
+              developing creative and innovative solutions that not only meet
+              but exceed expectations, always striving for efficiency in my
+              approach.
+            </p>
+            <p className="text-GrayLetters leading-9">
+              I view myself as a resourceful and self-motivated professional,
+              continuously seeking opportunities to enhance my knowledge and
+              adapt to the ever-evolving landscape of technology. I thrive on
+              challenges and embrace learning as an integral part of my journey,
+              leveraging my growing expertise to tackle complex projects.
+            </p>
+          </article>
+        </div>
       </div>
     </>
   );
 }
+
+export default Dashboard
