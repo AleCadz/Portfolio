@@ -1,7 +1,9 @@
+import Card from "@/components/Card";
 import Header from "@/components/Header";
 import Image from "next/image";
 
 const About = () => {
+
   return (
     <>
       <div className="flex flex-col min-h-screen w-screen px-4 sm:px-10 lg:px-20 bg-slate-900 py-5">
@@ -17,7 +19,9 @@ const About = () => {
               I want to improve my skills!
             </h2>
             <p>
-              Im currently working as <span className="font-bold">FullStack</span> web developer, developing scalable solutions with React
+              Im currently working as{" "}
+              <span className="font-bold">FullStack</span> web developer,
+              developing scalable solutions with React
             </p>
           </div>
           <div>
@@ -28,6 +32,11 @@ const About = () => {
               height={300}
             />
           </div>
+        </div>
+        <div className="flex flex-wrap mt-5 gap-5">
+          {Array.from({ length: 10 }, (_, index) => (
+            <Card key={index} />
+          ))}
         </div>
       </div>
     </>

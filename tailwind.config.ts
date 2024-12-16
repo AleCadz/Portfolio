@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        card: "rgba(220, 224, 232)",
         global: {},
       },
       textColor: {
